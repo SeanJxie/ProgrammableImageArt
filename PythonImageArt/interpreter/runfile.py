@@ -1,4 +1,5 @@
-INSERTION_INDEX = 12
+MAIN_INSERTION_INDEX = 12
+SIZE_INSERTION_INDEX = 7
 
 # LOAD TEMPLATE
 with open("template", 'r') as tf:
@@ -9,11 +10,18 @@ with open("template", 'r') as tf:
 with open("run.txt", 'r') as df:
     d_content = df.readlines()
 
-for i in range(len(d_content)):
-    d_content[i] = "        " + d_content[i]
-
 # WRITE RUN FILE
-t_content.insert(INSERTION_INDEX, d_content)
+if d_content[0][:4] == "SIZE":  # Size argument
+    for i in range(1, len(d_content)):  # Skip first line
+        d_content[i] = "        " + d_content[i]
+    t_content[SIZE_INSERTION_INDEX] = d_content[0]
+    t_content.insert(MAIN_INSERTION_INDEX, d_content[1:])
+
+else:  # No size argument
+    for i in range(len(d_content)):
+        d_content[i] = "        " + d_content[i]
+    t_content.insert(MAIN_INSERTION_INDEX, d_content)
+
 r_content = []
 for elem in t_content:
     if type(elem) == list:
