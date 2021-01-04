@@ -12,3 +12,8 @@ if math.dist((512, 512), (x, y)) == 100:
     image[x, y] = (255, 255, 255)
 ```
 would produce a white circle with radius 100 centered at the middle of the image.
+
+To run the ```run``` file, start CMD in the same directory and enter
+```
+py runfile.py
+```
