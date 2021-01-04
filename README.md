@@ -10,7 +10,7 @@ In the ```run.txt``` file, you have control over the color of every pixel on the
 SIZE = (1000, 1000)
 image[0, 0] = (255, 255, 255)
 ```
-Notice that size is always specified first.
+Notice that canvas ```SIZE``` is always specified first.
 
 If we wanted to change all pixels, ```x``` and ```y``` would be used rather than actual coordinate values like in the example above. For example, if we wanted to color the entire canvas white:
 ```
