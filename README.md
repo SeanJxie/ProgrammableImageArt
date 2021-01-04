@@ -20,3 +20,6 @@ To run the ```run``` file, start CMD in the same directory and enter
 ```
 py runfile.py
 ```
+
+
+You can also directly write Python code into the ```template``` file.
