@@ -3,7 +3,7 @@ import numpy as np
 import time
 import keyboard
 import math
-from PythonImageArt.interpreter import util
+import util
 SIZE = (1024, 1024)
 image = util.get_blank_array(SIZE)
 print("DRAWING...")
