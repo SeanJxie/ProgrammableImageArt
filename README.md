@@ -17,7 +17,7 @@ if math.dist((512, 512), (x, y)) == 100:
 would produce a white circle with radius 100 centered at the middle of the image.
 
 Many neat patterns can be generated with a few simple lines of code. Below are just a few examples:
-[sin]!(https://github.com/SeanJxie/ProgrammableImageArt/tree/main/samples)
+![sin](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/sin.png)
 
 To run the ```run.txt``` file, start CMD in the same directory and enter
 ```
