@@ -1,5 +1,5 @@
 # ProgrammableImageArt
-Write code, make pretty pictures.
+Using code to make art.
 
 # Dependencies
 Uses ```numpy```, ```PIL```, and ```keyboard```.
