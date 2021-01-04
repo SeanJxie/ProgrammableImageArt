@@ -41,4 +41,5 @@ Many neat patterns can be generated with a few simple lines of code defining a b
 ![sin](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/sin.png)
 ![grad](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/gradient.png)
 ![waves](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/waves.png)
+![bwgrad](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/bwgrad.png)
 
