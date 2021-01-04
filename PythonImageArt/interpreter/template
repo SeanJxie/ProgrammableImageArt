@@ -4,7 +4,7 @@ import time
 import keyboard
 import math
 import util
-SIZE = (1024, 1024)
+SIZE = (1000, 1000)
 image = util.get_blank_array(SIZE)
 print("DRAWING...")
 for x in np.arange(SIZE[0]):
@@ -12,14 +12,14 @@ for x in np.arange(SIZE[0]):
 
 print("FINISHED DRAWING")
 util.quick_show(image)
-print('PRESS "S" TO SAVE AND "N" TO SKIP')
+print('PRESS "1" TO SAVE AND "2" TO SKIP')
 while 1:
-    if keyboard.is_pressed('s'):
+    if keyboard.is_pressed('1'):
         name = f"{time.time()}out.png"
         util.save_array_as_img(name, image)
         print(f"SAVED AS {name}")
         break
-    if keyboard.is_pressed('n'):
+    if keyboard.is_pressed('2'):
         print("NO SAVE")
         break
 print("FINISHED")
