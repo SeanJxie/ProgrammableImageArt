@@ -5,18 +5,20 @@ Write code, make pretty pictures.
 Uses ```numpy```, ```PIL```, and ```keyboard```.
 
 # Usage
-In the ```run.txt``` file, you have control over the color of every pixel on the canvas of size 1000 by 1000. The pixels can be accessed via ```image[x, y]```. For example, if we wanted to paint the canvas white (RGB(255, 255, 255)), we type in the ```run.txt``` file:
+In the ```run.txt``` file, you have control over the color of every pixel on the canvas of size 1000 by 1000. As such, a lot of manipulation can be done in order to produce unique images. The color of a pixel at ```(x, y)``` is can be accessed via ```image[x, y]```. For example, if we wanted to color the canvas white, we would use the RGB value for white ```(255, 255, 255)```:
 ```
 image[x, y] = (255, 255, 255)
 ```
-The ```math.py``` file is available to use as well. For example,
+The ```math.py``` file is available for use as well. For example,
 ```
 if math.dist((512, 512), (x, y)) == 100:
     image[x, y] = (255, 255, 255)
 ```
-would produce a white circle with radius 100 centered at the middle of the image.
+would produce a white circle outline with radius 100 centered at the middle of the image.
 
-Many neat patterns can be generated with a few simple lines of code. Below are just a few examples:
+By default, all values on the canvas are ```(0, 0, 0)```; black.
+
+Many neat patterns can be generated with a few simple lines of code defining a basic rule. Below are just a few examples:
 ![sin](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/sin.png)
 ![grad](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/gradient.png)
 ![waves](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/waves.png)
