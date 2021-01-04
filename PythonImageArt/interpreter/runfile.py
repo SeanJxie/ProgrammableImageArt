@@ -1,12 +1,12 @@
 INSERTION_INDEX = 11
 
 # LOAD TEMPLATE
-with open("template.txt", 'r') as tf:
+with open("template", 'r') as tf:
     t_content = tf.readlines()
     tf.close()
 
 # LOAD DRAW FILE FROM INPUT
-with open("run", 'r') as df:
+with open("run.txt", 'r') as df:
     d_content = df.readlines()
 
 for i in range(len(d_content)):

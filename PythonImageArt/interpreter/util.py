@@ -8,11 +8,12 @@ def get_blank_array(dimensions):
 
 
 def save_array_as_img(f_name, array):
-    Image.fromarray(array).save(os.path.join(os.getcwd().replace("interpreter", ''), f_name))
+    img = Image.fromarray(array).transpose(Image.ROTATE_90)
+    img.save(f_name)
 
 
 def quick_show(array):
-    Image.fromarray(array).show()
+    Image.fromarray(array).transpose(Image.ROTATE_90).show()
 
 
 def distance(p1, p2):
