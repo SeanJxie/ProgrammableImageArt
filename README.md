@@ -15,7 +15,7 @@ If we wanted to change all pixels, ```x``` and ```y``` would be used rather than
 image[x, y] = (255, 255, 255)
 ```
 
-The ```math.py``` file is available for use as well. For example,
+The ```math``` library is available for use as well. For example,
 ```
 if math.dist((512, 512), (x, y)) == 100:
     image[x, y] = (255, 255, 255)
@@ -28,6 +28,10 @@ To run the ```run.txt``` file, start CMD in the same directory and enter
 ```
 py runfile.py
 ```
+
+As mentioned above, the ```math``` library is available for use, alongside ```random``` and a customizable ```util```.
+
+Specifically, If you'd like to add custom functions, write them into the ```util.py``` file. These functions can be called from ```run.txt``` using standard ```util.function()``` convention.
 
 
 You can also directly write Python code into the ```run.py``` file that is generated after a ```py runfile.py``` call.
