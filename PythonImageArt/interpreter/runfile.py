@@ -8,7 +8,7 @@ with open("template", 'r') as tf:
 
 # LOAD DRAW FILE FROM INPUT
 with open("run.txt", 'r') as df:
-    d_content = df.readlines()
+    d_content = [e for e in df.readlines() if e != '\n']  # Skip blank lines
 
 # WRITE RUN FILE
 if d_content[0][:4] == "SIZE":  # Size argument
