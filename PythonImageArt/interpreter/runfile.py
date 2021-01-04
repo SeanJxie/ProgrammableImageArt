@@ -14,7 +14,7 @@ with open("run.txt", 'r') as df:
 if d_content[0][:4] == "SIZE":  # Size argument
     for i in range(1, len(d_content)):  # Skip first line
         d_content[i] = "        " + d_content[i]
-    t_content[SIZE_INSERTION_INDEX] = d_content[0]
+    t_content[SIZE_INSERTION_INDEX] = d_content[0].replace('[', '(').replace(']', ')')
     t_content.insert(MAIN_INSERTION_INDEX, d_content[1:])
 
 else:  # No size argument
