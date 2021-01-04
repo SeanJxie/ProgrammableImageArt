@@ -1,1 +1,1 @@
-image[x, y] = 
+image[x, y] = x / 1000 * 256

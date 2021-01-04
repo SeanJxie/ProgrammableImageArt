@@ -3,6 +3,7 @@ import numpy as np
 import time
 import keyboard
 import math
+import random
 import util
 SIZE = (1000, 1000)
 image = util.get_blank_array(SIZE)

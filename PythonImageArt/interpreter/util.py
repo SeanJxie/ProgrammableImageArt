@@ -1,6 +1,11 @@
-import os
 import numpy as np
 from PIL import Image
+
+"""
+
+Add custom functions here.
+
+"""
 
 
 def get_blank_array(dimensions):
