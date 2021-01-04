@@ -5,18 +5,22 @@ Using code to make art.
 Uses ```numpy```, ```PIL```, and ```keyboard```.
 
 # Usage
-In the ```run.txt``` file, you have control over the color of every pixel on the canvas of size 1000 by 1000. As such, a lot of manipulation can be done in order to produce unique images. The color of a pixel at ```(x, y)``` is can be accessed via ```image[x, y]```. For example, if we wanted to color the point (0, 0) white, we would use the RGB value for white ```(255, 255, 255)```:
+In the ```run.txt``` file, you have control over the color of every pixel on the canvas of customizable size. As such, a lot of manipulation can be done in order to produce unique images. The color of a pixel at ```(x, y)``` is can be accessed via ```image[x, y]```. For example, if we wanted to color the point (0, 0) white, we would use the RGB value for white ```(255, 255, 255)```:
 ```
+SIZE = (1000, 1000)
 image[0, 0] = (255, 255, 255)
 ```
+Notice that size is always specified first.
 
 If we wanted to change all pixels, ```x``` and ```y``` would be used rather than actual coordinate values like in the example above. For example, if we wanted to color the entire canvas white:
 ```
+SIZE = (1000, 1000)
 image[x, y] = (255, 255, 255)
 ```
 
 The ```math``` library is available for use as well. For example,
 ```
+SIZE = (1000, 1000)
 if math.dist((512, 512), (x, y)) == 100:
     image[x, y] = (255, 255, 255)
 ```
