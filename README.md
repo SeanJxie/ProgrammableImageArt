@@ -18,6 +18,7 @@ would produce a white circle with radius 100 centered at the middle of the image
 
 Many neat patterns can be generated with a few simple lines of code. Below are just a few examples:
 ![sin](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/sin.png)
+![grad](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/gradient.png)
 
 To run the ```run.txt``` file, start CMD in the same directory and enter
 ```
