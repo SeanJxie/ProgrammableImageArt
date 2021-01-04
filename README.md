@@ -2,7 +2,7 @@
 Write code, make pretty pictures.
 
 # Dependencies
-Uses ```numpy```, ```Pillow```, and ```keyboard```.
+Uses ```numpy```, ```PIL```, and ```keyboard```.
 
 # Usage
 In the ```run``` file, you have control over the color of every pixel on the canvas of size 1024 by 1024. The pixels can be accessed via ```image[x, y]```. For example, if we wanted to paint the canvas white (RGB(255, 255, 255)), we type in the ```run``` file:
