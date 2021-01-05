@@ -2,7 +2,7 @@
 Using code to make art.
 
 # Dependencies
-```pip install numpy```, ```pip install PIL```, and ```pip install keyboard```.
+```pip install numpy```, ```pip install Pillow```, and ```pip install keyboard```.
 
 # Usage
 In the ```run.txt``` file, you have control over the color of every pixel on the canvas of customizable size (default (1000, 1000)). As such, a lot of manipulation can be done in order to produce unique images. The color of a pixel at ```(x, y)``` is can be accessed via ```image[x, y]```. For example, if we wanted to color the point (0, 0) white, we would use the RGB value for white ```(255, 255, 255)```:
