@@ -7,11 +7,14 @@ import random
 import util
 SIZE = (1000, 1000)
 image = util.get_blank_array(SIZE)
-print("DRAWING...")
+count = 0
+print("\n...RENDERING...")
 for x in np.arange(SIZE[0]):
     for y in np.arange(SIZE[1]):
 
-print("FINISHED DRAWING")
+        print(f"\r{math.ceil(count / (SIZE[0] * SIZE[1]) * 100)}%", end='')
+        count += 1
+print("\nRENDER COMPLETE")
 util.quick_show(image)
 print('PRESS "1" TO SAVE AND "2" TO SKIP')
 while 1:
