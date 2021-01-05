@@ -42,7 +42,7 @@ You can also directly write Python code into the ```run.py``` file that is gener
 
 
 Many neat patterns can be generated with a few simple lines of code defining a basic rule. Below are just a few examples:
-![mandel](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/mandelbrot.png)
+![mandel](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/mandelbrot_hd.png)
 ![ball](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/ball.png)
 ![sin](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/sin.png)
 ![static](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/samples/static_circle.png)
