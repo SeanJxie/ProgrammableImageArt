@@ -5,6 +5,7 @@ import keyboard
 import math
 import random
 import util
+import sys
 SIZE = (1000, 1000)
 image = util.get_blank_array(SIZE)
 count = 0
@@ -12,7 +13,7 @@ print("\n...RENDERING...")
 for x in np.arange(SIZE[0]):
     for y in np.arange(SIZE[1]):
 
-        print(f"\r{math.ceil(count / (SIZE[0] * SIZE[1]) * 100)}%", end='')
+        sys.stdout.write(f"\r{math.ceil(count / (SIZE[0] * SIZE[1]) * 100)}%")
         count += 1
 print("\nRENDER COMPLETE")
 util.quick_show(image)

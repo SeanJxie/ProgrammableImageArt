@@ -40,7 +40,12 @@ def is_prime(n):
     return True
 
 
-MAX_ITER = 80
+# Mandelbrot calculation constants
+MAX_ITER = 100
+RE_START = -2
+RE_END = 1
+IM_START = -1
+IM_END = 1
 
 
 def mandelbrot(c):
