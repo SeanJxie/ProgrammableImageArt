@@ -1,0 +1,4 @@
+SIZE = (3840, 2160)
+
+if util.phi(x) == y:
+	image[x, y] = 255
