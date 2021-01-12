@@ -1,10 +1,14 @@
 # ProgrammableImageArt
 Using code to make art.
 
-# Dependencies
-```pip install numpy```, ```pip install Pillow```, and ```pip install keyboard```.
-
 # Usage
+Images are produced via ```run.txt``` files. The format of a run file is provided below
+```
+SIZE = (WIDTH, HEIGHT)
+
+CODE HERE
+```
+
 In the ```run.txt``` file, you have control over the color of every pixel on the canvas of customizable size (default (1000, 1000)). As such, a lot of manipulation can be done in order to produce unique images. The color of a pixel at ```(x, y)``` is can be accessed via ```image[x, y]```. For example, if we wanted to color the point (0, 0) white, we would use the RGB value for white ```(255, 255, 255)```:
 ```
 SIZE = (1000, 1000)
@@ -28,17 +32,12 @@ would produce a white circle outline with radius 100 centered at the middle of t
 
 By default, all values on the canvas are ```(0, 0, 0)```; black.
 
-To run the ```run.txt``` file, start CMD in the same directory and enter
-```
-py runfile.py
-```
+To run the ```run.txt``` file, place it in the same directory as ```runfile.exe```, and run ```runfile.exe```.
 
-As mentioned above, the ```math``` library is available for use, alongside ```random``` and a customizable ```util```.
+As mentioned previously, the ```math``` library is available for use, alongside ```random``` and a customizable ```util```.
 
 Specifically, If you'd like to add custom functions, write them into the ```util.py``` file. These functions can be called from ```run.txt``` using standard ```util.function()``` convention.
 
-
-You can also directly write Python code into the ```run.py``` file that is generated after a ```py runfile.py``` call.
 
 
 Many neat patterns can be generated with a few simple lines of code defining a basic rule. Below are just a few examples:
