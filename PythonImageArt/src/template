@@ -13,7 +13,7 @@ print("\n...RENDERING...")
 for x in np.arange(SIZE[0]):
     for y in np.arange(SIZE[1]):
 
-        sys.stdout.write(f"\r{count / (SIZE[0] * SIZE[1]) * 100}%")
+        print(f"\rPROGRESS: {round(count / (SIZE[0] * SIZE[1]) * 100, 1)}%", end='')
         count += 1
 print("\nRENDER COMPLETE")
 util.quick_show(image)

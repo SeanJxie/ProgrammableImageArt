@@ -8,7 +8,7 @@ DOUBLE_INDENT = 8
 DIRNAME = os.path.dirname(os.path.abspath(__file__))
 
 # LOAD TEMPLATE
-with open(os.path.join(DIRNAME, "template"), 'r') as tf:
+with open(os.path.join(DIRNAME, util.resource_path("template")), 'r') as tf:
     t_content = tf.readlines()
     tf.close()
 
