@@ -32,7 +32,7 @@ would produce a white circle outline with radius 100 centered at the middle of t
 
 By default, all values on the canvas are ```(0, 0, 0)```; black.
 
-To run the ```run.txt``` file, place it in the same directory as ```runfile.exe```, and run ```runfile.exe```.
+To run the ```run.txt``` file, place it in the same directory as ```runfile.exe``` (which can be found [here](https://github.com/SeanJxie/ProgrammableImageArt/blob/main/PythonImageArt/executable/runfile.exe?raw=true)), and run ```runfile.exe```.
 
 As mentioned previously, the ```math``` library is available for use, alongside ```random``` and a customizable ```util```.
 
